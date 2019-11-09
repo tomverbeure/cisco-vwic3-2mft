@@ -31,11 +31,11 @@ but no real practical information about how to wire things up, or which IOs can 
 
 PCB Top:
 
-[Top PCB Annotated](./assets/top_annotated.png)
+![Top PCB Annotated](./assets/top_annotated.png)
 
 PCB Bottom:
 
-[Bottom PCB Annotated](./assets/back_annotated.png)
+![Bottom PCB Annotated](./assets/back_annotated.png)
 
 Main Active Components:
 
@@ -84,7 +84,7 @@ AFAIK, this top row is only used for power delivery: 12V, 5V, and 3.3V.
 There are CISCO board that only have the bottom 2 rows. From what I've measured, the bottom 2 rows only contain a 12V
 supply, no 5V or 3.3V pins.
 
-[HWIC Connector Annotated](./assets/hwic_connector_annotated.png)
+![HWIC Connector Annotated](./assets/hwic_connector_annotated.png)
 
 ## Power
 
@@ -104,9 +104,9 @@ However, you can get away with only 5V by doing this:
 
 ## FPGA pinout
 
-[EP2S30F484 bottom pinout](./assets/EP2S30F484_pinout.png)
+![EP2S30F484 bottom pinout](./assets/EP2S30F484_pinout.png)
 
-[EP2S30F484 pins on PCB](./assets/FPGA_pins_on_PCB.jpg)
+![EP2S30F484 pins on PCB](./assets/FPGA_pins_on_PCB.jpg)
 
 ## FPGA Pin Assigment
 
