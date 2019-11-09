@@ -104,6 +104,13 @@ However, you can get away with only 5V by doing this:
     It's unclear why there is an external 3.3V and an internally generated 3.3V. 
     But everything seem to work by tying them together (as far as I could tell.)
 
+I bought a Cisco 3825 router ($10K back in the day, now $50 on eBay) to help with reverse engineering:
+
+![Cisco 3825](./assets/Cisco-3825_router.jpg)
+
+![Cisco Router with WAN card](./assets/Cisco_and_WAN_card.jpg)
+
+
 ## FPGA pinout
 
 ![EP2S30F484 bottom pinout](./assets/EP2S30F484_pinout.png)
