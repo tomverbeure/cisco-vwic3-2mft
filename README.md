@@ -2,30 +2,30 @@
 
 # CISCO VWIC2-2MFT-T1/E1 WAN Card Reverse Engineering
 
-The goal of this project was to reverse engineer the Cisco VWIC2-2MFT-T1/E1 WAN card. These are
-plug-in board that slide into a standard HWIC slot of a Cisco routers.
+The goal of this project was to reverse engineer the Cisco VWIC2-2MFT-T1/E1 WAN card. This is
+plug-in board that slides into a standard HWIC slot of a Cisco router.
 
 These boards can be found for $5 on eBay and when properly reverse engineered, they'd be perfect
-board for hobby FPGA applications.
+boards for hobby FPGA applications.
 
 ![Front with Bracket](./assets/front_with_bracket.jpg)
 
-Except for one thing: while Intel lists that Stratix-II FPGA are supported with the Quartus Web Edition
-11.0sp1, this is only true for the EP2S15 FPGA, **not the EP2S30 FPGA**! For that one, you need the
-expensive Quartus Standard Edition.
+Except for one thing: while Intel lists that Stratix-II FPGAs are supported with the Quartus Web Edition
+11.0sp1, this is only true for the smallest version, the EP2S15 FPGA, **not the EP2S30 FPGA**! For that one, 
+you need the expensive Quartus Standard Edition.
 
 And that makes reverse engineering this board pretty much useless... I obviously only figured this
-out after already spending a healthy number of ours of working on the reverse engineering the board.
+out after already spending a healthy number of hours on the reverse engineering the board.
 
-For posterity's sake, here's the information that I was able to tease out of the PCB.
+For posterity's sake, here's the information that I was able to tease out of the PCB so far.
 
 ## FPGA Board Hack
 
 I found out about this board through the [FPGA Board Hack](https://hackaday.io/project/159853-fpga-board-hack)
 project.
 
-It lists a number of commercial projects that have an FPGA in them, and it has a decicated log
-about [Cisco VWIC3-2MFT](https://hackaday.io/project/159853-fpga-board-hack/log/161719-stratix-ii-cisco-vwic3-2mft),
+It lists a number of commercial projects that have an FPGA in them, and it has a dedicated log
+about the [Cisco VWIC3-2MFT](https://hackaday.io/project/159853-fpga-board-hack/log/161719-stratix-ii-cisco-vwic3-2mft)
 but no real practical information about how to wire things up, or which IOs can be used.
 
 ## PCB Components
@@ -81,9 +81,9 @@ Extra stuff:
 
 The CISCO HWIC connector has 2 rows with pins that are 1.26mm spaced, and 1 row with pins that are 2.56mm spaced. 
 
-AFAIK, this top row is only used for power delivery: 12V, 5V, and 3.3V.
+AFAIK, the top row is only used for power delivery: 12V, 5V, and 3.3V.
 
-There are CISCO board that only have the bottom 2 rows. From what I've measured, the bottom 2 rows only contain a 12V
+There are CISCO boards that only have the bottom 2 rows. From what I've measured, the bottom 2 rows only contain a 12V
 supply, no 5V or 3.3V pins.
 
 ![HWIC Connector Annotated](./assets/hwic_connector_annotated.png)
