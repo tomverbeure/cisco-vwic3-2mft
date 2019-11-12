@@ -1,8 +1,8 @@
 
 
-# CISCO VWIC2-2MFT-T1/E1 WAN Card Reverse Engineering
+# CISCO VWIC3-2MFT-T1/E1 WAN Card Reverse Engineering
 
-The goal of this project was to reverse engineer the Cisco VWIC2-2MFT-T1/E1 WAN card. This is
+The goal of this project was to reverse engineer the Cisco VWIC3-2MFT-T1/E1 WAN card. This is
 a plug-in board that slides into a standard HWIC slot of a Cisco router.
 
 These boards can be found for $5 on eBay and when properly reverse engineered, they'd be perfect
