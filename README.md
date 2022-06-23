@@ -88,6 +88,9 @@ supply, no 5V or 3.3V pins.
 
 ![HWIC Connector Annotated](./assets/hwic_connector_annotated.png)
 
+Note: The [Cisco c1600re reverse engineering project](https://github.com/tomstorey/c1600re#wic-slot) has 
+some pins of the WIC connector annotated. The WIC connector is probably backward compatible with the HWIC slot.
+
 ## Power
 
 In theory, you need 3 external power supplies to feed this thing: 12V, 5V, and 3.3V.
